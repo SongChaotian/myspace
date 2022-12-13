@@ -2,6 +2,10 @@ import { setInterval } from 'core-js';
 import $ from 'jquery';
 import jwt_decode from 'jwt-decode';
 
+// vue界面中  
+// store.dispatch调用的是store里面actions里面的方法
+// store.commit调用的是store里面mutations里面的方法
+
 const ModuleUser = {
     state: {
         id: "",

@@ -4,6 +4,8 @@
 
 ## 安装步骤
 
+### 1.vue可视化安装
+
 1. 将代码文件git clone到本地
 2. 在本地打开`PowerShell`输入`vue ui`打开vue可视化管理平台
 3. 在Vue项目管理器中导入文件夹，此时会提醒项目中找不到依赖文件`node_modules`，选择`仍然导入`
@@ -23,4 +25,11 @@
      - eslint
      - eslint-plugin-vue
 5. 在导航栏`任务`中选择`serve`点击运行，即可启动项目
+
+
+
+### 2.命令行安装
+
+1. `npm install` 安装依赖
+2. `npm run serve` 启动服务
 

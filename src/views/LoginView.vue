@@ -22,7 +22,7 @@
 <script>
 import ContentBase from '../components/ContentBase';
 import { ref } from 'vue';
-import { useStore } from 'vuex';
+import { useStore } from 'vuex';  // 使用全局变量
 import router from '@/router/index';
 
 export default {
@@ -39,8 +39,8 @@ export default {
 
         const login = () => {
             error_message.value = "";
-            // dispatch调用的是store里面actions里面的方法
-            // commit调用的是store里面mutations里面的方法
+            // store.dispatch调用的是store里面actions里面的方法
+            // store.commit调用的是store里面mutations里面的方法
             store.dispatch("login", {
                 username: username.value,
                 password: password.value,
